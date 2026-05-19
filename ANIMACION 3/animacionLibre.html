@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>ANIMACION 3 CSS</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .contenedor{
+                width: 400px;
+                height: 200px;
+                background-color: rgb(62, 191, 255);
+                border: 1px solid black;
+                position: relative; /* para centrar el div - sin esto no se podra realizar ningun movimiento con el div */
+                margin: 0 auto; /* para que el marco se vaya al centro */
+                overflow: hidden; /* muestra solo lo interior */
+            }
+
+            .cuadrito{
+                width: 120px;
+                height: 120px;
+                position: absolute; /* permite mover el div dentro del contenedor - se pone para los hijos */
+                top: 40px;
+                left:130px;
+                
+                animation: cuadrito 1s infinite alternate; /* linear - la animacion estara igual cuando comienze y cuando termine */
+            }
+
+            @keyframes cuadrito {
+                from{
+                    rotate: calc(-5deg);
+                }
+                to{
+                    rotate: calc(5deg);
+                }
+            }
+            .cuadrito img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            
+            .cuadro1{
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50px;
+                left: 500px;
+                background-color: darkgreen;
+                
+                animation: cuadro1 1s infinite linear;
+            }
+
+            @keyframes cuadro1 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+            .cuadro2{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 100px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro2 1.5s infinite linear;
+            }
+
+            @keyframes cuadro2 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+
+            .cuadro3{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 25px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro3 2s infinite linear;
+            }
+
+            @keyframes cuadro3 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+
+            .cuadro4{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 190px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro4 4s infinite linear;
+            }
+
+            @keyframes cuadro4 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+            .cuadro5{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 150px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro5 1.3s infinite linear;
+            }
+
+            @keyframes cuadro5 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+            .cuadro6{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 65px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro6 2.3s infinite linear;
+            }
+
+            @keyframes cuadro6 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+            .cuadro7{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 12px;
+                left: 500px;
+                background-color: darkgreen;
+                animation: cuadro7 1.1s infinite linear;
+            }
+
+            @keyframes cuadro7 {
+                from{
+                    left: 500px;
+                }
+                to{
+                    left: -100px;
+                }
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="vuelo">
+                <div class="cuadro1"></div>
+                <div class="cuadro2"></div>
+                <div class="cuadro3"></div>
+                <div class="cuadro4"></div>
+                <div class="cuadro5"></div>
+                <div class="cuadro6"></div>
+                <div class="cuadro7"></div>
+                <div class="cuadro8"></div>
+                <div class="cuadro9"></div>
+                <div class="cuadro10"></div>
+            </div>
+            <div class="cuadrito">
+                <img src="img/periquito.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
+
