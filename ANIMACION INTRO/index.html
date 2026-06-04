@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+    <style>
+        h1{
+            font-family: "century gotic";
+            color: rgba(165, 42, 42, 0);
+            text-align: center;
+            animation-name: titulo; /* titulo para la animacion */
+            animation-duration: 3s; /* duracion de la animacion */
+            animation-iteration-count: 1; /* cantidad de veces que dura la animacion */
+            animation-fill-mode: forwards   ;/* modo de relleno - indicas cual es el ultimo estado que se mantiene fordwars: ultimo - backwards*/
+        }
+        @keyframes titulo{
+            /* inicio:from - final: to */
+            from{
+                color: rgba(165, 42, 42, 0);
+            }
+            to{
+                color: rgba(0, 0, 255, 1 );
+            }
+        }
+        p{
+            text-align: center;
+            font-family: "century gotic";
+            font-weight: bold;
+            animation-name: texto;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+        @keyframes texto{
+            from{
+                color: rgba(0, 0, 0, 0);
+            }
+            to{
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+        img{
+            height: 200px; /* altura */
+            width: 200px; /* ancho */
+            display: block; /* centrar la imagen */
+            margin: auto; /* centrar imagen */
+            opacity: 0;
+
+            animation-name: imagen;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 6s;
+            animation-fill-mode: forwards ;
+        }
+        @keyframes imagen{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>PROMOCIÓN 2026 - CI</h1>
+    <p>IESTP MANUEL SEOANE CORRALES</p>
+    <!-- p para poner texto normal -->
+     <img src="img/logo.png">
+</body>
+</html>
