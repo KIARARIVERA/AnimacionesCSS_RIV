@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(128, 255, 0, 0.578);
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(4px);
+    animation: fondo 8s forwards;
+    padding: 300px;
+}
+
+
+@keyframes fondo {
+    0% {
+        padding: 300px;
+        filter: blur(4px);
+    }
+
+    100% {
+        padding: 100px;
+        margin-top: 0px;
+        filter: blur(0px);
+    }
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.contenedor {
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.enlace {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+/* 450 pixeles */
+.cuadro1 {
+    position: absolute;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    text-align: center;
+    z-index: -2;
+}
+
+.c1 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+
+.cuadro2 {
+    position: absolute;
+    background-color: brown;
+    top: 660px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.cuadro3 {
+    position: absolute;
+    background-size: cover;
+    top: 1100px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c3 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.cuadro4 {
+    position: absolute;
+    background-size: cover;
+    top: 1550px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c4 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.pelota {
+    position: absolute;
+    width: 300px;
+    left: -150px;
+    top: 35px;
+
+    animation: pelota 5s infinite linear;
+}
+
+@keyframes pelota {
+    0% {
+        left: -150px;
+        top: 35px;
+    }
+
+    20% {
+        left: 20%;
+        top: 50px;
+    }
+
+    40% {
+        left: 40%;
+        top: 50px;
+    }
+
+    60% {
+        left: 60%;
+        top: 25px;
+    }
+
+    80% {
+        left: 80%;
+        top: 50px;
+    }
+
+    90% {
+        left: 90%;
+        top: 40px;
+    }
+
+    100% {
+        left: 100%;
+        top: 35px;
+    }
+}
+
+.cuadro5 {
+    position: absolute;
+    background-size: cover;
+    top: 2000px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c5 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.pajaro {
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    text-align: center;
+
+    animation: pajaro 3s infinite;
+}
+
+@keyframes pajaro {
+    0% {
+        rotate: 10deg;
+        top: 40px;
+    }
+
+    50% {
+        rotate: 0deg;
+        top: 60px;
+    }
+
+    100% {
+        rotate: 10deg;
+        top: 40px;
+    }
+}
+
+.cuadro6 {
+    position: absolute;
+    background-size: cover;
+    top: 2450px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c6 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.cuadro7 {
+    position: absolute;
+    background-size: cover;
+    top: 2900px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c7 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.cuadro8 {
+    position: absolute;
+    background-size: cover;
+    top: 3350px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c8 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.cuadro9 {
+    position: absolute;
+    background-size: cover;
+    top: 3800px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c9 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.cuadro10 {
+    position: absolute;
+    background-size: cover;
+    top: 4250px;
+    border: 1px solid white;
+    width: 100%;
+    height: 430px;
+    text-align: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.c10 {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    left: 0%;
+    z-index: -1;
+}
+
+.iyoko {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 300px;
+    left: 0%;
+    z-index: -1;
+
+}
+
+.arbust {
+    position: absolute;
+    background-size: cover;
+    width: 800px;
+    height: 900px;
+    top: 450px;
+    left: -180px;
+    rotate: 90deg;
+    z-index: -1;
+
+    animation: arbus 4s forwards 1s linear;
+}
+
+@keyframes arbus {
+    0% {
+        top: 450px;
+        left: -180px;
+    }
+
+    100% {
+        top: 450px;
+        left: -210px;
+    }
+}
