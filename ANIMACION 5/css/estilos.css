@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: black;
+}
+
+a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+.contenedor {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    border: 1px solid white;
+    margin: 0 auto;
+    overflow: hidden;
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+.marco1 {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+    background-size: cover;
+    animation: cuadro1 3s 1 forwards;
+}
+
+@keyframes cuadro1 {
+    0% {
+        left: -200px;
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.marco2 {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 200px;
+    top: -300px;
+    z-index: -2;
+
+    background-size: cover;
+    animation: cuadro2 3s 1 forwards 2s;
+}
+
+@keyframes cuadro2 {
+    0% {
+        top: -300px;
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.marco3 {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 400px;
+    bottom: -300px;
+    z-index: -3;
+
+    background-size: cover;
+    animation: cuadro3 3s 1 forwards 4s;
+}
+
+@keyframes cuadro3 {
+    0% {
+        bottom: -300px;
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.marco4 {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 600px;
+    top: -300px;
+    z-index: -4;
+
+    background-size: cover;
+    animation: cuadro4 3s 1 forwards 6s;
+}
+
+@keyframes cuadro4 {
+    0% {
+        top: -300px;
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.marco5 {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 1000px;
+    top: 0px;
+    z-index: -5;
+
+    background-size: cover;
+    animation: cuadro5 3s 1 forwards 8s;
+}
+
+@keyframes cuadro5 {
+    0% {
+        left: 1000px;
+        transform: rotatez(180deg);
+    }
+
+    100% {
+        left: 800px;
+    }
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.737);
+    color: rgba(137, 43, 226, 0.84);
+    z-index: 0;
+    height: 40px;
+    width: 100%;
+    top: -40px;
+
+    animation: texto 2s 1 forwards 10s;
+}
+
+@keyframes texto {
+    0% {
+        top: -40px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
