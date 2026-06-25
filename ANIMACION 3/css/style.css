@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+.nube1 {
+    position: absolute;
+    width: 400px;
+    top: 150px;
+    left: -200px;
+    z-index: 0;
+    animation: nube_b 5s infinite linear;
+}
+
+.nube2 {
+    position: absolute;
+    width: 600px;
+    top: 70px;
+    right: -200px;
+    z-index: 0;
+    animation: nube_c 6s infinite linear;
+}
+@keyframes nube_b {
+    0% {
+        top: 150px;
+        left: -200px;
+    }
+
+    50% {
+        top: 130px;
+        left: -170px;
+    }
+
+    100% {
+        top: 150px;
+        left: -200px;
+    }
+}
+
+@keyframes nube_c {
+    0% {
+        top: 70px;
+        right: -200px;
+    }
+
+    50% {
+        top: 90px;
+        right: -150px;
+    }
+
+    100% {
+        top: 70px;
+        right: -200px;
+    }
+}
